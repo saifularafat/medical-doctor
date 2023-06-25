@@ -1,7 +1,11 @@
+import Nav from "./Nav";
+
 const NavBer = () => {
     return (
         <div>
-            <h2>NavBer</h2>
+            <div className="flex flex-col items-center justify-between">
+                <Nav />
+            </div>
         </div>
     );
 };
