@@ -14,16 +14,26 @@ const Banner = () => {
             }}
         >
             <Container>
-                <div className="flex flex-row items-center justify-center absolute mt-8">
-                    <div className="w-1/2 text-white">
-                        <div className=" w-[540px] ">
-                            <h2 className="text-6xl font-bold leading-normal">Your Best Medical Help Center</h2>
+                <div className="md:flex flex-row items-center justify-center absolute">
+                    <div className="md:w-1/2 text-white">
+                        <div className=" md:w-[540px] hidden md:block ">
+                            <h2 className="md:text-6xl font-bold leading-normal">Your Best Medical Help Center</h2>
                             <p className="mb-7 text-[19px] font-semibold">Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
                             <Button adders='' label='All Service' />
                         </div>
+                        <div className=" md:hidden w-full mx-auto space-y-3">
+                            <h2 className="font-semibold text-4xl text-center">Your Best Medical <br /> Help Center</h2>
+                            <p className="mb-3 text-base font-normal text-center ">Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
+                            <div className="text-center pt-3">
+                                <Button adders='' label='All Service' />
+                            </div>
+                        </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2 hidden md:block">
                         <img src={docImage} alt="" />
+                    </div>
+                    <div className="md:hidden bg-main-color pb-10">
+                        <img src={docImage} alt="" className="w-3/4 mx-auto"/>
                     </div>
                 </div>
             </Container>

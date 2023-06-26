@@ -9,3 +9,7 @@
         font-family: 'Source Sans 3', sans-serif;
     }
 }
+
+.detail_btn{
+    @apply text-xl font-bold text-white bg-button-color py-3 px-7 rounded-lg border border-button-color hover:text-button-color hover:bg-transparent transition duration-200
+}
