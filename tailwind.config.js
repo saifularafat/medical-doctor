@@ -9,6 +9,8 @@ export default {
       colors: {
         'main-color': '#07332F',
         'title-color': '#0A0808',
+        'subTitle-color': '#3B3A3A',
+        'description-color': '#6C6B6B',
         'button-color': '#F7A582',
       },
 

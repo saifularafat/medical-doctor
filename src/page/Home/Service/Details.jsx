@@ -19,7 +19,7 @@ const Details = () => {
                     <h3 className="font-semibold text-2xl ">{oneService?.title}</h3>
                     <p className="text-gray-400 text-lg text-justify md:text-left">{oneService?.description}</p>
                     <p className="text-gray-400 text-lg text-justify md:text-left">{oneService?.description1}</p>
-                    <p className="text-gray-500 text-xl">Treatment Time: <span>09:00 AM - 05:30 PM </span> ||| <span>Saturday - Thursday </span></p>
+                    <p className="text-gray-500 text-xl">Treatment Time: <span>09:00 AM - 05:30 PM </span> ||| <span>EveryDay</span></p>
                 </div>
             </div>
         </Container>

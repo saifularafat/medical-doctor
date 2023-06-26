@@ -1,0 +1,19 @@
+
+.swiper-button-prev{
+    border-radius: 50px !important;
+    border: 2px solid #F7A582;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 8px;
+    color: #F7A582;
+    font-size: 40px !important;
+}
+.swiper-button-next{
+    border-radius: 50px !important;
+    border: 2px solid #F7A582;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 8px;
+    color: #F7A582;
+    font-size: 40px !important;
+}
