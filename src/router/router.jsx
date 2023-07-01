@@ -7,6 +7,7 @@ import Home from "../page/Home/Home/Home"
 import About from "../page/About/About";
 import Appointment from "../page/Appointment/Appointment";
 import Details from "../page/Home/Service/Details";
+import Profile from "../page/Home/ExpertDoctor/Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <Details />
+            },
+            {
+                path: '/profile/:id',
+                element: <Profile />
             },
             {
                 path: 'about',

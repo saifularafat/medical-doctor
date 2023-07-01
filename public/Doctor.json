@@ -1,0 +1,200 @@
+[
+    {
+      "id": 11111111,
+      "doc_name": "Dr. Ruby Perrin",
+      "img": "https://i.ibb.co/JCWXbg0/doc-1.png",
+      "title": "MBBS, MD - General Medicine",
+      "adders": "Dhanmondi, Dhaka, Bangladesh",
+      "direction": " - Get Directions",
+      "job": "Available On Mon, 22 December",
+      "bookingFree": 15,
+      "rating": 5,
+      "totalRating": 35,
+      "overView": [
+        {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "americaUni": "American Dental Medical University",
+          "degree": "BDS",
+          "year": "1998 - 2003",
+          "degreeOne": "MDS",
+          "yearOne": "2003 - 2005",
+          "hospitalName": "Glowing Smiles Family Dental Clinic",
+          "experienceYear": "2010 - Present (5 years)",
+          "hospitalNameTwo": "Comfort Care Dental Clinic",
+          "experienceYearTwo": "2007 - 2010 (3 years)",
+          "hospitalNameThree": "Dream Smile Dental Practice",
+          "experienceYearThree": "2005 - 2007 (2 years)",
+          "service": [
+            "Tooth cleaning",
+            "Root Canal Therapy",
+            "Implants",
+            "Composite Bonding",
+            "Fissure Sealants",
+            "Surgical Extractions"
+          ],
+          "awardsDate": "July 2019",
+          "awardName": "Humanitarian Award",
+          "awardDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateOne": "March 2011",
+          "awardNameOne": "Certificate for International Volunteer Service",
+          "awardDetailsOne": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateTwo": "May 2008",
+          "awardNameTwo": "The Dental Professional of The Year Award",
+          "awardDetailsTwo": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "Specializations": [
+            "Children Care",
+            "Dental Care",
+            "Oral and Maxillofacial Surgery",
+            "Orthodontist",
+            "Periodontist",
+            "Prosthodontics"
+          ]
+        }
+      ],
+      "location": [
+        {
+          "hospitalLocation": "Dhaka Medical",
+          "adders": "Dhanmondi, Dhaka, Bangladesh",
+          "talePhone": "+88 000 000 000 00"
+        }
+      ],
+      "businessHours": [
+        {
+          "jobTime": "10:00 AM - 01:00 PM (DM)",
+          "pathTime": "04:30 PM - 08:30PM"
+        }
+      ]
+    },
+    {
+      "id": 22222222,
+      "doc_name": "Karyen Anderson",
+      "img": "https://i.ibb.co/hgdqYHr/doc-2.png",
+      "title": "BTP - Senior Physiotherapist",
+      "adders": "Dhanmondi, Dhaka, Bangladesh",
+      "direction": " - Get Directions",
+      "job": "Available On Mon, 22 December",
+      "bookingFree": 15,
+      "rating": 5,
+      "totalRating": 35,
+      "overView": [
+        {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "americaUni": "American Dental Medical University",
+          "degree": "BDS",
+          "year": "1998 - 2003",
+          "degreeOne": "MDS",
+          "yearOne": "2003 - 2005",
+          "hospitalName": "Glowing Smiles Family Dental Clinic",
+          "experienceYear": "2010 - Present (5 years)",
+          "hospitalNameTwo": "Comfort Care Dental Clinic",
+          "experienceYearTwo": "2007 - 2010 (3 years)",
+          "hospitalNameThree": "Dream Smile Dental Practice",
+          "experienceYearThree": "2005 - 2007 (2 years)",
+          "service": [
+            "Tooth cleaning",
+            "Root Canal Therapy",
+            "Implants",
+            "Composite Bonding",
+            "Fissure Sealants",
+            "Surgical Extractions"
+          ],
+          "awardsDate": "July 2019",
+          "awardName": "Humanitarian Award",
+          "awardDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateOne": "March 2011",
+          "awardNameOne": "Certificate for International Volunteer Service",
+          "awardDetailsOne": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateTwo": "May 2008",
+          "awardNameTwo": "The Dental Professional of The Year Award",
+          "awardDetailsTwo": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "Specializations": [
+            "Children Care",
+            "Dental Care",
+            "Oral and Maxillofacial Surgery",
+            "Orthodontist",
+            "Periodontist",
+            "Prosthodontics"
+          ]
+        }
+      ],
+      "location": [
+        {
+          "hospitalLocation": "Dhaka Medical",
+          "adders": "Dhanmondi, Dhaka, Bangladesh",
+          "talePhone": "+88 000 000 000 00"
+        }
+      ],
+      "businessHours": [
+        {
+          "jobTime": "10:00 AM - 01:00 PM (DM)",
+          "pathTime": "04:30 PM - 08:30PM"
+        }
+      ]
+    },
+    {
+      "id": 33333333,
+      "doc_name": "Karyen Anderson",
+      "img": "https://i.ibb.co/K0txL0n/doc-3.png",
+      "title": "BTP - Senior Physiotherapist",
+      "adders": "Dhanmondi, Dhaka, Bangladesh",
+      "direction": " - Get Directions",
+      "job": "Available On Mon, 22 December",
+      "bookingFree": 15,
+      "rating": 5,
+      "totalRating": 35,
+      "overView": [
+        {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "americaUni": "American Dental Medical University",
+          "degree": "BDS",
+          "year": "1998 - 2003",
+          "degreeOne": "MDS",
+          "yearOne": "2003 - 2005",
+          "hospitalName": "Glowing Smiles Family Dental Clinic",
+          "experienceYear": "2010 - Present (5 years)",
+          "hospitalNameTwo": "Comfort Care Dental Clinic",
+          "experienceYearTwo": "2007 - 2010 (3 years)",
+          "hospitalNameThree": "Dream Smile Dental Practice",
+          "experienceYearThree": "2005 - 2007 (2 years)",
+          "service": [
+            "Tooth cleaning",
+            "Root Canal Therapy",
+            "Implants",
+            "Composite Bonding",
+            "Fissure Sealants",
+            "Surgical Extractions"
+          ],
+          "awardsDate": "July 2019",
+          "awardName": "Humanitarian Award",
+          "awardDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateOne": "March 2011",
+          "awardNameOne": "Certificate for International Volunteer Service",
+          "awardDetailsOne": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "awardsDateTwo": "May 2008",
+          "awardNameTwo": "The Dental Professional of The Year Award",
+          "awardDetailsTwo": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus.Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+          "Specializations": [
+            "Children Care",
+            "Dental Care",
+            "Oral and Maxillofacial Surgery",
+            "Orthodontist",
+            "Periodontist",
+            "Prosthodontics"
+          ]
+        }
+      ],
+      "location": [
+        {
+          "hospitalLocation": "Dhaka Medical",
+          "adders": "Dhanmondi, Dhaka, Bangladesh",
+          "talePhone": "+88 000 000 000 00"
+        }
+      ],
+      "businessHours": [
+        {
+          "jobTime": "10:00 AM - 01:00 PM (DM)",
+          "pathTime": "04:30 PM - 08:30PM"
+        }
+      ]
+    }
+  ]
