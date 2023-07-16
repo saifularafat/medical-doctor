@@ -6,8 +6,8 @@ const Expert = ({ expertDoc }) => {
     // console.log(expertDoc);
     return (
         <div className="mb-20 mt-12">
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
-                <div className="card w-96 bg-base-100 shadow-xl border space-y-3">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-6">
+                <div className="card md:w-96 bg-base-100 shadow-xl border md:space-y-3">
                     <img
                         src={expertDoc?.img}
                         alt="Shoes"
@@ -57,7 +57,7 @@ const Expert = ({ expertDoc }) => {
                         </div>
                         <div className="mt-5 w-full">
                             <Link to={`profile/${expertDoc?.id}`}>
-                                <button className="w-full text-xl font-bold text-white py-[14px] bg-button-color border border-button-color hover:text-button-color hover:bg-transparent transition duration-200 rounded-lg">View Profile</button>
+                                <button className="w-full text-xl font-bold hover:text-white py-[14px] hover:bg-button-color border border-button-color text-button-color bg-transparent transition duration-200 rounded-lg">View Profile</button>
                             </Link>
                         </div>
                     </div>

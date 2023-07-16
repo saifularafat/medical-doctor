@@ -12,22 +12,32 @@ const Nav = () => {
                     </div>
                     <ul className="md:flex items-center hidden space-x-8">
                         <li>
-                            <NavLink to='/' className={({isActive}) => (isActive ? 'text-button-color text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            <NavLink to='/' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='about' className={({isActive}) => (isActive ? 'text-button-color text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            <NavLink to='about' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
                                 About
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='appointment' className={({isActive}) => (isActive ? 'text-button-color text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            <NavLink to='appointment' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
                             Appointment
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/login' className={({isActive}) => (isActive ? 'text-button-color text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            <NavLink to='reviews' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            Reviews 
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='contactUs' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
+                            Contact Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/login' className={({isActive}) => (isActive ? 'bg-button-color py-3 px-6 text-white text-xl font-semibold': 'text-white text-xl font-semibold')}>
                                 Login
                             </NavLink>
                         </li>

@@ -13,7 +13,7 @@ const ProfileDocu = ({ profileInfo }) => {
             <div className="bg-white md:p-9 p-5 rounded-lg mb-8">
                 <div className="md:flex items-center gap-7">
                     <div>
-                        <p className="md:w-[350px] w-[347px] h-[250px] md:h-[378px] rounded-lg bg-slate-300"></p>
+                        <p className="md:w-[350px]  h-[240px] md:h-[378px] rounded-lg bg-slate-300"></p>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-4xl font-bold text-title-color pt-4 md:pt-0">{profileInfo?.doc_name}</h2>

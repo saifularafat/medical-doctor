@@ -21,7 +21,7 @@ const Banner = () => {
                             <p className="mb-7 text-[19px] font-semibold">Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
                             <Button adders='' label='All Service' />
                         </div>
-                        <div className=" md:hidden w-full mx-auto space-y-3">
+                        <div className=" md:hidden w-full mx-auto space-y-3 pt-28">
                             <h2 className="font-semibold text-4xl text-center">Your Best Medical <br /> Help Center</h2>
                             <p className="mb-3 text-base font-normal text-center ">Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
                             <div className="text-center pt-3">
@@ -32,7 +32,7 @@ const Banner = () => {
                     <div className="md:w-1/2 hidden md:block">
                         <img src={docImage} alt="" />
                     </div>
-                    <div className="md:hidden bg-main-color pb-10">
+                    <div className="md:hidden bg-main-color pb-3">
                         <img src={docImage} alt="" className="w-3/4 mx-auto"/>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ const ExpertDoctor = () => {
             <SectionTitle
                 title='Our Expert Doctors'
                 subTitle='Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.' />
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-6">
                 {
                     expertDoctor.map(expertDoc => <Expert
                         key={expertDoc.id}

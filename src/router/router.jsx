@@ -8,6 +8,8 @@ import About from "../page/About/About";
 import Appointment from "../page/Appointment/Appointment";
 import Details from "../page/Home/Service/Details";
 import Profile from "../page/Home/ExpertDoctor/Profile/Profile";
+import Reviews from "../page/Reviews/Reviews";
+import ContactUs from "../page/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
             {
                 path: 'appointment',
                 element: <Appointment />
+            },
+            {
+                path: 'reviews',
+                element: <Reviews />
+            },
+            {
+                path: 'contactUs',
+                element: <ContactUs />
             },
         ]
     },
