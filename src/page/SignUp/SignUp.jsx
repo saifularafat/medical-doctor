@@ -1,18 +1,59 @@
 import { useForm } from "react-hook-form"
 import login from '../../assets/doctor/login-img.png'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hook/useAuth";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 const SignUp = () => {
-    const {createUser} = useAuth();
+    const { createUser } = useAuth();
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
-        // reset,
         formState: { errors },
     } = useForm()
     const handlerSignUp = data => {
         console.log(data);
+        createUser(data.email, data.password)
+            .then(result => {
+                const logged = result.user;
+                console.log(logged);
+                axios.post(`${import.meta.env.VITE_API_URL}/users`, {
+                    name: data.name,
+                    email: data.email,
+                    userName: data.userName,
+                    role: 'passant'
+                })
+                    .then(data => {
+                        console.log(data);
+                        if (data.data.insertedId) {
+                            Swal.fire({
+                                position: 'top-center',
+                                icon: 'success',
+                                title: 'Your SignUp success!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                        navigate('/')
+                    })
+                    .catch(err => {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: `${err.message}`,
+                        })
+                    })
+            })
+            .catch(error => {
+                console.log(error.message);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: `${error.message}`,
+                })
+            })
     }
     return (
         <div className="md:flex flex-row">
@@ -94,7 +135,13 @@ const SignUp = () => {
                                 required
                                 placeholder="Enter your password"
                                 className="w-full bg-[#F3F3F3] p-4 focus:outline-none rounded-md text-[#9D9C9C] shadow-lg mt-3"
-                                {...register("password", { required: true })}
+                                {...register("password",
+                                    {
+                                        required: true,
+                                        minLength: 6,
+                                        maxLength: 20,
+                                        pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z].*[a-z]).{6}/
+                                    })}
                             />
                             {errors.password?.type === 'required' &&
                                 <p className="text-red-600 mt-1">Password is required</p>
@@ -104,7 +151,7 @@ const SignUp = () => {
                             <input type="submit" value={'Create Account'} className="w-full cursor-pointer bg-button-color py-4 font-semibold text-xl tracking-wide text-white rounded-md focus:outline-none" />
                         </div>
                     </form>
-                    <p className="text-center pt-5">Already registered? Go to  
+                    <p className="text-center pt-5">Already registered? Go to
 
                         <Link to='/login' className="text-button-color font-bold text-lg text-center">
                             SIGN IN

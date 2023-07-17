@@ -3,6 +3,8 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 
 import { useForm } from "react-hook-form"
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const {
@@ -13,6 +15,33 @@ const Contact = () => {
 
     const handleBookNow = data => {
         console.log(data);
+        axios.post(`${import.meta.env.VITE_API_URL}/bookings`, {
+            userName: data.userName,
+            userEmail: data.userEmail,
+            userNumber: data.userNumber,
+            doctorName: data.doctorName,
+            date: data.date,
+            time: data.time,
+        })
+            .then(data => {
+                console.log(data.data);
+                if (data.data.insertedId) {
+                    Swal.fire({
+                        position: 'top-center',
+                        icon: 'success',
+                        title: 'Your Booking Successful',
+                        showConfirmButton: false,
+                        timer: 1000
+                    })
+                }
+            })
+            .catch((err) => {
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'error',
+                    title: `${err.message}`
+                })
+            })
     }
 
     return (
@@ -43,7 +72,7 @@ const Contact = () => {
                                     required
                                     {...register("userName", { required: true })}
                                     className="md:w-[260px] w-full focus:border-none
-                                    rounded-lg pl-4 py-4 text-white bg-[#133D39]"
+                                    rounded-lg pl-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none"
                                 />
                                 <input
                                     type="email"
@@ -52,7 +81,7 @@ const Contact = () => {
                                     required
                                     {...register("userEmail", { required: true })}
                                     className="md:w-[260px] w-full
-                                    rounded-lg pl-4 py-4 text-white bg-[#133D39]"
+                                    rounded-lg pl-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none"
                                 />
                             </div>
                             <div className="md:flex items-center gap-4 md:space-y-0 space-y-5">
@@ -62,7 +91,7 @@ const Contact = () => {
                                     required
                                     {...register("userNumber", { required: true })}
                                     className="md:w-[260px] w-full
-                                    rounded-lg pl-4 py-4 text-white bg-[#133D39]"
+                                    rounded-lg pl-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none"
                                 />
                                 <input
                                     type="text"
@@ -71,7 +100,7 @@ const Contact = () => {
                                     required
                                     {...register("doctorName", { required: true })}
                                     className="md:w-[260px] w-full
-                                    rounded-lg pl-4 py-4 text-white bg-[#133D39]"
+                                    rounded-lg pl-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none"
                                 />
                             </div>
                             <div className="md:flex items-center gap-4 md:space-y-0 space-y-5">
@@ -82,14 +111,14 @@ const Contact = () => {
                                     required
                                     {...register("date", { required: true })}
                                     className="md:w-[260px] w-full
-                                    rounded-lg px-4 py-4 text-white bg-[#133D39]"
+                                    rounded-lg px-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none"
                                 />
                                 <select
                                     name="time"
                                     required
                                     {...register("time", { required: true })}
                                     className="md:w-[260px] w-full
-                                    rounded-lg px-4 py-4 text-white bg-[#133D39]">
+                                    rounded-lg px-4 py-4 text-white text-xl bg-[#133D39] focus:outline-none">
                                     <option value="time">Time</option>
                                     <option value="10.30 AM">10.30 AM</option>
                                     <option value="12.00 PM">12.00 PM</option>

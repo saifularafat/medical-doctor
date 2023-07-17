@@ -1,7 +1,14 @@
 import { useForm } from "react-hook-form"
-import login from '../../assets/doctor/login-img.png'
-import { Link } from "react-router-dom";
+import loginImg from '../../assets/doctor/login-img.png'
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import useAuth from "../../hook/useAuth";
+import Swal from "sweetalert2";
 const Login = () => {
+    const { login } = useAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
     const {
         register,
         handleSubmit,
@@ -10,11 +17,31 @@ const Login = () => {
     } = useForm()
     const handlerLogin = data => {
         console.log(data);
+        login(data.email, data.password)
+            .then(result => {
+                const logged = result.user;
+                console.log(logged);
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Your Login Successful',
+                    showConfirmButton: false,
+                    timer: 1300
+                })
+                navigate(from, { replace: true })
+            })
+            .catch(err => {
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'error',
+                    title: `${err.message}`
+                })
+            })
     }
     return (
         <div className="md:flex flex-row">
             <div className="bg-main-color md:w-1/2 h-screen">
-                <img src={login} alt="" className='w-4/6 mx-auto pt-20' />
+                <img src={loginImg} alt="" className='w-4/6 mx-auto pt-20' />
             </div>
             <div className='md:w-1/2 flex items-center justify-center'>
                 <div className="flex flex-col border md:px-20 px-8 md:py-12 py-5 rounded-md shadow-lg shadow-slate-400">
